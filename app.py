@@ -18,5 +18,17 @@ else:
     temp = round(weather_data.json()['main']['temp'])
     temp_in_celsius = round((temp - 32) * 5/9)
 
+
+user_input2 = input("Would you like the temperate in Celsius or Fahrenheit?: ")
+while (user_input2 != "Celsius") or (user_input2 != "Fahrenheit"):
+    print("Oops, try typing that again")
+    user_input2 = input("Please choose one, Celsius or Fahrenheit?: ")
+    if (user_input2 == "Celsius") or (user_input2 == "Fahrenheit"):
+        break
+
+if user_input2 == "Celsius":
     print(f"The weather in {user_input} is: {weather}.")
-    print(f"The temperature in {user_input} is: {temp_in_celsius} celsius or {temp} fahrenheit.")
+    print(f"The temperature in {user_input} is {temp_in_celsius} degrees Celsius.")
+elif user_input2 == "Fahrenheit":
+    print(f"The weather in {user_input} is: {weather}.")
+    print(f"The temperature in {user_input} is {temp} degrees Fahrenheit.")
