@@ -5,3 +5,8 @@
 This app fetches data from the OpenWeatherMap API and displays the current weather, including temperature and a brief desc of weather conditions.
 
  
+### Features:
+-Real-Time Weather Data
+-Provides in both Celsius and Fahrenheit + short desc
+-User-Friendly 
+-Error Handling
